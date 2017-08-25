@@ -59,11 +59,14 @@ $( document ).ready(function() {
 	function showFire()
 	{
 		var dt=new Date();
-		if(dt.getMinutes()==56)
+		if(dt.getMinutes()==00)
 			{
 			  $('.demo').fireworks({ sound: true, opacity: 0.5, width: '100%', height: '100%' });
 			  $('#cards').slideDown( "slow" );
 			  audioElement.play();
+			  $('#countdown').hide();
+			  $('#24').show();
+			  $('#cHeader').hide();
 			  clearInterval(countTimerEmailName);
 			}
 	}

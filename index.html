@@ -5,8 +5,7 @@
 <title>Happy Birthday!!</title>
 <link rel="stylesheet" href="css/main.css"/>
 <link href="css/jquery-sakura.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/jquery.js"></script>
-
+<script src="js/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
@@ -23,9 +22,9 @@
 
 <div class="wrap">  
 <img src="images/happy-birthday.png" id="hbimage"></img><br>
-  <h1>Countdown</strong></h1>
+  <h1 id="cHeader">Countdown</strong></h1>
 
-  <div class="countdown">
+  <div class="countdown" id="countdown">
     <div class="bloc-time hours" data-init-value="0">
       <span class="count-title">Hours</span>
 
@@ -104,6 +103,10 @@
       </div>
     </div>
   </div>
+<div id="24" style="display:none;text-align:center">
+<img src="images/24.jpg" style="    width: 15%;
+    border-radius: 50%;">
+</div>
 </div>
 <div class="row" id="cards" style="display:none">
 <div class="col-sm-12 col-md-4 col-lg-3">
