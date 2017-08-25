@@ -1,4 +1,35 @@
 $( document ).ready(function() {
+	(function countdown(){   
+		   
+		   var launch_date = new Date (Date.parse("Sep 07, 2017 00:00:00 GMT +1"));
+		   var now = new Date();
+		   var days; var hours; var minutes; var seconds; var rest;
+			
+		   seconds = rest = Math.floor(((launch_date.getTime() - now.getTime()) / 1000));
+
+		   days = zero (Math.floor(seconds / 86400));
+		   seconds -= days * 86400;
+					
+		   hours = zero (Math.floor(seconds / 3600));
+		   seconds -= hours * 3600;
+
+		   minutes = zero (Math.floor(seconds / 60));
+		   seconds -= minutes * 60;
+
+		   seconds = zero (Math.floor(seconds));
+		    
+		   function zero(n){
+		      return (n < 10 ? '0' : false) + n;  
+		   }
+		  
+		   rest <= 0 ? days = hours = minutes = seconds = '00' : setTimeout(countdown, 1000);
+		     
+		   document.getElementById('countdown').innerHTML =
+		      '<li ><div><span style="color:#fdd10a">' + days +'</span>day' + (days > 1 ? 's' : '') +'</div></li>'
+		      +'<li><div><span style="color:#fe32fd">' + hours +'</span>hour' + (hours > 1 ? 's' : '') +'</div></li>'
+		      +'<li><div><span style="color:#f11b19">' + minutes +'</span>minute' + (minutes > 1 ? 's' : '') +'</div></li>'
+		      +'<li><div><span style="color:#5da31f">' + seconds +'</span>second' + (seconds > 1 ? 's' : '') +'</div></li>';
+		})();
 	 var audioElement = document.createElement('audio');
 	    audioElement.setAttribute('src', 'audio/1_song.mp3');
 	    
@@ -59,14 +90,14 @@ $( document ).ready(function() {
 	function showFire()
 	{
 		var dt=new Date();
-		if(dt.getMinutes()==00)
+		if( dt.getMinutes()==2)
 			{
 			  $('.demo').fireworks({ sound: true, opacity: 0.5, width: '100%', height: '100%' });
 			  $('#cards').slideDown( "slow" );
 			  audioElement.play();
+			  $('#initial').hide();
 			  $('#countdown').hide();
 			  $('#24').show();
-			  $('#cHeader').hide();
 			  clearInterval(countTimerEmailName);
 			}
 	}
