@@ -89,7 +89,7 @@ $( document ).ready(function() {
             }, 500);  
 	function showFire()
 	{
-		var dt=new Date();
+		/*var dt=new Date();
 		if( dt.getMinutes()==2)
 			{
 			  $('.demo').fireworks({ sound: true, opacity: 0.5, width: '100%', height: '100%' });
@@ -99,7 +99,7 @@ $( document ).ready(function() {
 			  $('#countdown').hide();
 			  $('#24').show();
 			  clearInterval(countTimerEmailName);
-			}
+			}*/
 	}
 	var Countdown = {
 			  
