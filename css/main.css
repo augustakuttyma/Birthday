@@ -1,4 +1,7 @@
-
+body
+{
+	background: url('../images/balloons.jpg')
+}
 .flip
 {
 	cursor: pointer;
