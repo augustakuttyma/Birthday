@@ -1,4 +1,23 @@
 jQuery(function($) {
+	/*var i=0
+	$(".marqueeElement").each(function(){
+	var $this=$(this);
+	$this.css('top',i);
+	i+=10;
+	doScroll($this)
+
+	});
+
+	function doScroll($ele)
+	{
+	var top=parseInt($ele.css('top'));
+	if(top<-200)
+	{
+	top=600;
+	$ele.css('top',top);
+	}
+	$ele.animate({top:(parseInt(top)-10)},200,'linear',function(){doScroll($(this))});
+	}*/
 	$.fn.snow();
 	  $('.body1').sakura();
 	var vid = document.getElementById("myVideo");
@@ -133,7 +152,7 @@ $('.videolink').on('click',function(){vid.play()});
 				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
 			}
 		}).done(function(data){
-			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+			form_status.html('<div class="alert alert-success"> <strong>Success!</strong> I got your message ammu. </div>').delay(5000).fadeOut();
 		});
 	});
 
@@ -460,6 +479,42 @@ $('.videolink').on('click',function(){vid.play()});
 			  }
 	   
 	  });
+	  $('.img-responsive').on('click', function() {
+		  switch($(this).attr('id')) {
+		    case 'wish1':
+		    	var audioElement = document.createElement('audio');
+			    audioElement.setAttribute('src', 'audio/wish1.mp3');
+			    audioElement.play();
+			    audioElement.onended = function() {
+			        $('#wish1').parent().parent().trigger('click');
+			    };
+		        break;
+		    case 'wish2':
+		    	var audioElement = document.createElement('audio');
+			    audioElement.setAttribute('src', 'audio/wish2.mp3');
+			    audioElement.play();
+			    audioElement.onended = function() {
+			        $('#wish2').parent().parent().trigger('click');
+			    };
+		        break;
+		    case 'wish3':
+		    	var audioElement = document.createElement('audio');
+			    audioElement.setAttribute('src', 'audio/wish3.mp3');
+			    audioElement.play();
+			    audioElement.onended = function() {
+			        $('#wish3').parent().parent().trigger('click');
+			    };
+		        break;
+		    case 'wish4':
+		    	var audioElement = document.createElement('audio');
+			    audioElement.setAttribute('src', 'audio/wish4.mp3');
+			    audioElement.play();
+			    audioElement.onended = function() {
+			        $('#wish4').parent().parent().trigger('click');
+			    };
+		        break;
+		}
+		});
 	  $("#81").on("click", function(event){
 		  if($('#81 a').attr('href')==undefined)
 			  {

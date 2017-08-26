@@ -1,3 +1,12 @@
+
+.flip
+{
+	cursor: pointer;
+}
+.flip .back {
+    text-align: center;
+}
+
 #countdown {
    width: 462px;
    position: absolute;
@@ -39,21 +48,13 @@
 
 .body {
   background-color: #028fcc;
+  height:600px;
 }
 .balloon
 {
 	width:110px;
 }
 
-.wrap {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  
-}
 
 a {
   text-decoration: none;
@@ -800,6 +801,10 @@ section {
   height:300px !important;
 }
 
+.member-info
+{
+	margin-top:50px;
+}
 .member-info h3 {
   margin-top: 35px;
 }
