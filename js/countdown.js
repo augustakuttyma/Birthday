@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 	(function countdown(){   
 		   
-		   var launch_date = new Date (Date.parse("Sep 07, 2017 00:00:00 GMT +5:30"));
+		   var launch_date = new Date (Date.parse("Aug 30, 2017 03:20:00 GMT +5:30"));
 		   var now = new Date();
 		   var days; var hours; var minutes; var seconds; var rest;
 			
@@ -23,6 +23,16 @@ $( document ).ready(function() {
 		   }
 		  
 		   rest <= 0 ? days = hours = minutes = seconds = '00' : setTimeout(countdown, 1000);
+		   if(rest<=0)
+			   {
+			   $('.demo').fireworks({ sound: true, opacity: 0.5, width: '100%', height: '100%' });
+				  $('#birthday').slideDown( "slow" );
+				  audioElement.play();
+				 $('#initial').hide();
+				  $('#countdown').hide();
+				 // $('#24').show();
+				  //clearInterval(countTimerEmailName);
+			   }
 		     
 		   document.getElementById('countdown').innerHTML =
 		      '<li ><div><span style="color:#fdd10a">' + days +'</span>day' + (days > 1 ? 's' : '') +'</div></li>'

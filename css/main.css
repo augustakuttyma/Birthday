@@ -807,6 +807,7 @@ section {
 .member-info
 {
 	margin-top:50px;
+	background-color: white;
 }
 .member-info h3 {
   margin-top: 35px;
@@ -1227,7 +1228,7 @@ ul.address {
 	transform:rotate(360deg);
 }
 .offer{
-	background:#fff; border:1px solid #ddd; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); margin: 15px 0; overflow:hidden;
+	background:#fff; border:1px solid #ddd; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); margin: 15px 0; overflow:hidden;height:400px;
 }
 .offer:hover {
     -webkit-transform: scale(1.1); 
