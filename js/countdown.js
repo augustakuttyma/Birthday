@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 	(function countdown(){   
 		   
-		   var launch_date = new Date (Date.parse("Sep 07, 2017 00:40:00 GMT +5:30"));
+		   var launch_date = new Date (Date.parse("Sep 07, 2017 00:45:00 GMT +5:30"));
 		   var now = new Date();
 		   var days; var hours; var minutes; var seconds; var rest;
 			
