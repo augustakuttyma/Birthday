@@ -82,7 +82,7 @@ $( document ).ready(function() {
 				  $('body').sakura();
 				 
 				  var date1 = new Date();    
-				    var date2 = new Date("2017/09/07 00:00:00");
+				    var date2 = new Date("2017/09/07 00:40:00");
 				    //Customise date2 for your required future time
 
 				    var diff = (date2 - date1)/1000;
